@@ -15,5 +15,9 @@ class BusStop
     @queue << person
   end
 
+  def remove_from_queue()
+    return @queue.shift()
+  end
+
 
 end

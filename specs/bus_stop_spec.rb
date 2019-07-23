@@ -23,6 +23,12 @@ class BusStopTest < MiniTest::Test
     assert_equal(1, @stop.queue_length())
   end
 
+  def test_can_remove_from__queue()
+    @stop.add_person_queue(@person1)
+    @stop.remove_from_queue()
+    assert_equal(0, @stop.queue_length())
+  end
+
 
 
 end
