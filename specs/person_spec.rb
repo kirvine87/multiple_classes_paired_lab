@@ -10,7 +10,7 @@ class TestPerson < MiniTest::Test
 
   def test_get_person_name()
     assert_equal("Kyle", @person.name)
-  end
+  end 
 
   def test_get_person_age()
     assert_equal(19, @person.age)
